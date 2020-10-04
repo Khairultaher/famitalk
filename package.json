@@ -1,0 +1,38 @@
+{
+  "name": "chatastrophe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/copy_assets.js && node_modules/.bin/webpack --config webpack.config.prod.js",
+    "start": "node_modules/.bin/webpack-dev-server",
+    "deploy": "yarn build && firebase deploy"
+  },
+  "dependencies": {
+    "@react-firebase/auth": "^0.2.10",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^4.3.0",
+    "file-loader": "^6.1.0",
+    "firebase": "^7.22.0",
+    "firebase-admin": "^9.2.0",
+    "fs-extra": "^9.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.13.0",
+    "style-loader": "^1.2.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-manifest-plugin": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-template": "^6.2.0",
+    "webpack-cli": "^3.3.12"
+  }
+}

@@ -1,0 +1,19 @@
+1.  Setup React, Babel 7, and Webpack 4
+    https://dev.to/0xhjohnson/setup-react-babel-7-and-webpack-4-2168
+
+#.  yarn add react-hot-loader
+#.  yarn add html-webpackplugin
+#.  yarn add css-loader style-loader
+#.  yarn add file-loader
+#.  yarn add fs-extra
+#.  yarn add webpack-manifest-plugin
+#.  Firebase setup:
+    npm install -g firebase-tools
+    firebase login
+    firebase init
+#.  Firebase Auth:
+    yarn add firebase
+    yarn add @react-firebase/auth
+    
+
+
